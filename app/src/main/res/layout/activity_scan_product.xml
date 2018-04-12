@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context="com.example.iset.testproject.ScanProduct">
+
+    <ImageView
+        android:id="@+id/img_scan"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="-80dp"
+        android:src="@drawable/logobarcode" />
+
+    <EditText
+        android:id="@+id/txtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:paddingLeft="25dp"
+        android:background="@drawable/backgroundeditext"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/scanbtn"
+        android:layout_width="140dp"
+        android:layout_height="49dp"
+        android:layout_margin="20dp"
+
+
+        android:background="@drawable/back_btn_start"
+        android:text="S C A N"
+        android:textColor="@color/colorWhite" />
+
+
+
+</LinearLayout>
+

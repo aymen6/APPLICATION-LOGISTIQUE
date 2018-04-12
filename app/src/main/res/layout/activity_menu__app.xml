@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/backgroundmenu"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical"
+    tools:context="com.example.iset.testproject.Menu_App">
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:layout_marginTop="-25dp"
+        android:layout_marginBottom="35dp"
+        android:gravity="center"
+
+        android:textColor="@color/colorWhite"
+        android:textSize="32dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <Button
+            android:id="@+id/btnsearch"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="List Products"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/backgroundbuttonmenu"
+            android:drawableTop="@drawable/iconeye"
+            android:drawablePadding="-45dp"
+            android:paddingTop="30dp"
+            android:layout_weight="1"
+            android:onClick="btnsearch"/>
+
+        <Button
+            android:id="@+id/btnscan"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Scan barcode"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/backgroundbuttonmenu"
+            android:drawableTop="@drawable/iconbarcode"
+            android:drawablePadding="-45dp"
+            android:paddingTop="30dp"
+            android:layout_weight="1"
+            android:onClick="btnScaner"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <Button
+            android:id="@+id/btnview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/backgroundbuttonmenu"
+            android:drawablePadding="-45dp"
+            android:drawableTop="@drawable/iconeye"
+            android:paddingTop="30dp"
+            android:text="List Price Request"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btnlogout"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Log  out"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/backgroundbuttonmenu"
+            android:drawableTop="@drawable/out"
+            android:drawablePadding="-40dp"
+            android:paddingTop="30dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>

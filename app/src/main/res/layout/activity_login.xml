@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+    android:background="@color/colorPrimaryDark"
+    android:weightSum="1"
+
+    tools:context="com.example.iset.testproject.Login">
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="#FFF"
+        android:textSize="12dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/borderightlogin"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"/>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:weightSum="1">
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:mtf_cardCollapsedHeight="1dp"
+            app:mtf_image="@drawable/ic_email_black_24dp"
+            app:mtf_animationDuration="500"
+            app:mtf_labelColor="#FFF"
+            app:mtf_hasFocus="false">
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:text="UserOdoo@yahoo.fr"
+                android:textColor="#333"
+                android:textSize="17dp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:mtf_cardCollapsedHeight="1dp"
+            app:mtf_image="@drawable/ic_lock_black_24dp"
+            app:mtf_animationDuration="500"
+            app:mtf_labelColor="#FFF"
+            android:scrollbarSize="21dp"
+            app:mtf_hasFocus="false">
+
+            <EditText
+
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:text="abcdef"
+                android:textColor="#333"
+                android:textSize="17sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+    </LinearLayout>
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorProg"
+        app:cpb_colorIndicator="@color/colorWhiteTrans"
+        app:cpb_colorIndicatorBackground="@color/colorAccent"
+        app:cpb_colorProgress="#00fdfdfd"
+        app:cpb_cornerRadius="10dp"
+        app:cpb_selectorComplete="@color/colorWhite"
+        app:cpb_selectorError="@color/colorWhite"
+        app:cpb_selectorIdle="@color/colorWhite"
+        app:cpb_textComplete="Login"
+        app:cpb_textError="Login"
+        app:cpb_textIdle="Login" />
+
+    <CheckBox
+        android:id="@+id/checkId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#f5d9ec"
+        android:text="Remember me"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="13dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#f5d9ec" />
+
+</LinearLayout>
